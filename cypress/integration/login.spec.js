@@ -12,8 +12,8 @@ describe('Log in', () => {
     })
 
     it('Should log in', () => {
-        cy.get('#email').type('jo44hndoe@example2.com')
-        cy.get('#password').type('123')
+        cy.get('#email').type('admin@admin.com')
+        cy.get('#password').type('Th1sP422w0rd')
 
         cy.get('#buttonLogin').click()
         cy.wait(5000)
