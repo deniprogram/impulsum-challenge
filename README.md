@@ -6,10 +6,11 @@
 ```JWT_SECRET=*********```
 
 After, run the development server:
+ - **Node version: v14.17.0**
+
 
 ```bash
-npm run dev
-# or
+yarn
 yarn dev
 ```
 
