@@ -16,7 +16,7 @@ describe('Log in', () => {
         cy.get('#password').type('123')
 
         cy.get('#buttonLogin').click()
-        cy.wait(3000)
+        cy.wait(5000)
         cy.url().should('eq', `${domain}/admin/users`)
     })
 
