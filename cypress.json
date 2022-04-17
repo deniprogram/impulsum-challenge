@@ -1,5 +1,6 @@
 {
     "env": {
         "domain": "http://localhost:3000"
-    }
+    },
+    "requestTimeout": 50000
 }

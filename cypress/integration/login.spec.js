@@ -16,7 +16,8 @@ describe('Log in', () => {
         cy.get('#password').type('Th1sP422w0rd')
 
         cy.get('#buttonLogin').click()
-        cy.wait(5000)
+        cy.intercept('POST', '/api/graphql').as('login')
+        cy.wait('@login')
         cy.url().should('eq', `${domain}/admin/users`)
     })
 
